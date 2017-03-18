@@ -42,7 +42,7 @@ were filtered out. This was important mostly for the challenge video, since ther
 ![gs](test_images_output/solidWhiteCurve.jpg4.png)
 Hough transform lines
 
-Afterwards, I splitted lines into left and right lanes and computed the top and bottom points for each side. So, if I had 5 lines belonging to the left, I'd get the point of any line that was closer to the top and the same for the bottom. This allowed me to have a single lane marking.
+Afterwards, I splitted lines into left and right lanes and computed the top and bottom points for each side. So, if I had 5 lines belonging to the left, I'd get the point of any line that was closer to the top and the same for the bottom. This allowed me to have a single lane marking. I also extrapolated the final lane lines so that they covered from a minimum image height to a maximum.
 
 For the final output I just drawed the two final lines into the input image.
 

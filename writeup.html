@@ -23,7 +23,7 @@ Masked Cany Edge Detection</p>
 were filtered out. This was important mostly for the challenge video, since there were portions of the road with different colors and there would be horizontal lines.</p>
 <p><img src="/home/chiro/workspace/self_driving_car/CarND-LaneLines-P1/test_images_output/solidWhiteCurve.jpg4.png" alt="gs">
 Hough transform lines</p>
-<p>Afterwards, I splitted lines into left and right lanes and computed the top and bottom points for each side. So, if I had 5 lines belonging to the left, I&#39;d get the point of any line that was closer to the top and the same for the bottom. This allowed me to have a single lane marking.</p>
+<p>Afterwards, I splitted lines into left and right lanes and computed the top and bottom points for each side. So, if I had 5 lines belonging to the left, I&#39;d get the point of any line that was closer to the top and the same for the bottom. This allowed me to have a single lane marking. I also extrapolated the final lane lines so that they covered from a minimum image height to a maximum.</p>
 <p>For the final output I just drawed the two final lines into the input image.</p>
 <p><img src="/home/chiro/workspace/self_driving_car/CarND-LaneLines-P1/test_images_output/solidWhiteCurve.jpg5.png" alt="gs">
 Final image</p>
